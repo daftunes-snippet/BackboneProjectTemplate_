@@ -29,10 +29,12 @@ define([
 			});
 
 			this.views.item = new ItemView();
-			
+
 			this.$el.append(this.views.header.render().el);
 			this.$el.append(this.views.item.render().el);
+
 			$('body').append(this.render().el);
+
 		},
 
 		render: function() {

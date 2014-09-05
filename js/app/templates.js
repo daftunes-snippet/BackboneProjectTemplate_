@@ -10,23 +10,14 @@ define([
 	].join('');
 
 	Templates.item = [
-		'<item>',
 		'<p>{{title}}</p>',
-		'<button type="button">EDIT</button>',
-		'</item>'
+		'<button type="button">EDIT</button>'
+	].join('');
+
+	Templates.person = [
+		'<h3>{{name}}</h3>, {{age}}, {{occupation}}'
 	].join('');
 	
-
-
-	for (var tmpl in Templates) {
-	    if (Templates.hasOwnProperty(tmpl)) {
-	        Templates[tmpl] = Mustache.parse(Templates[tmpl]);  
-	    }
-	}
-
-
-
-
 
 	return Templates;
 });

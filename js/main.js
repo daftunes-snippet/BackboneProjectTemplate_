@@ -1,7 +1,7 @@
 require.config({
 
 	paths: {
-		'jquery': 'libs/jquery-1.10.1.min',
+		'jquery': 'libs/jquery-2.1.1.min',
 		'underscore': 'libs/underscore',
 		'mustache': 'libs/mustache',
 		'backbone': 'libs/backbone',
@@ -24,9 +24,6 @@ require.config({
 			deps: [
 				'jquery'
 			]
-		},
-		'mustache' : {
-			exports: 'Mustache'
 		}
 	}
 

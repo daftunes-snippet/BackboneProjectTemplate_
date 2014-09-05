@@ -11,7 +11,7 @@ define([
 		var appModel = new AppModel({id:1});
 
 		var appView = new AppView({model: appModel});
-		$('body').append(appView.render().el);
+		
 
 		var router = new Router(appView);
 		Backbone.history.start();
@@ -23,6 +23,8 @@ define([
 	return {
 		initialize: initialize
 	};
+
+	
 });
 
 

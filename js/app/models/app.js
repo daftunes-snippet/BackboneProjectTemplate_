@@ -9,6 +9,9 @@ define([
 		localStorage: new Backbone.LocalStorage("AppSettings"),
 		defaults: {
 			
+		},
+		initialize: function(){
+			
 		}
 	});
 

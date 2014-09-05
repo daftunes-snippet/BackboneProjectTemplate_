@@ -1,9 +1,9 @@
 define([
 	'jquery',
 	'backbone',
-	'mustache',
-	'app/templates'
-],function($, Backbone, Mustache, Templates) {
+	'app/templates',
+	'mustache'
+],function($, Backbone, Templates, Mustache) {
 	'use strict';
 
 	var HeaderView = Backbone.View.extend({	
@@ -27,8 +27,10 @@ define([
 		},
 		
 		render: function() {
+			
 			var _html = Mustache.render(this.template);
 			this.$el.html(_html);
+			
 			return this;
 		}
 	});
