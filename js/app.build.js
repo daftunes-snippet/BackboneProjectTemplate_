@@ -1,7 +1,7 @@
 ({
 
 	paths: {
-		'jquery': 'libs/jquery-2.1.1.min',
+		'jquery': 'libs/jquery-1.10.1.min',
 		'underscore': 'libs/underscore',
 		'backbone': 'libs/backbone',
 		'bootstrap': 'libs/bootstrap',
@@ -24,6 +24,9 @@
 			deps: [
 				'jquery'
 			]
+		},
+		'mustache': {
+			exports: 'Mustache'
 		}
 	},
 

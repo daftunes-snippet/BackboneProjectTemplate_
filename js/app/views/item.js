@@ -1,10 +1,10 @@
 define([
 	'jquery',
 	'backbone',
+	'mustache',
 	'app/models/itemModel',
-	'app/templates',
-	'mustache'
-], function ($, Backbone, ItemModel, Templates, Mustache) {
+	'app/templates'
+], function ($, Backbone, Mustache, ItemModel, Templates) {
 
 	'use strict';
 
@@ -30,17 +30,13 @@ define([
 
 		render: function() {
 			
-			
 			var _html = Mustache.render(this.template, this.model.toJSON());
 
 			console.log(this.model, _html);
 			this.$el.html(_html);
-			
 			return this;
 		}
 
-
-		
 	});
 
 	return ItemView;
